@@ -36,6 +36,7 @@ html {
 
 body {
   font-family: var(--font-primary);
+  margin: 0 2rem;
 }
 
 .img-responsive,
@@ -368,6 +369,7 @@ h6,
 @media screen and (max-width: 480px) {
   body {
     text-align: center;
+    margin: 0 1rem;
   }
 
   /* .navbar */
