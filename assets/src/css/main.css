@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+:root {
+  /* color */
+  --color-black: #000;
+  --color-white: #fff;
+  --color-pink: linear-gradient(#ff698d 100%, #fb3f6c 100%);
+  --color-fade-pink: linear-gradient(#ff6489 3%);
+  --color-orange: #f17216;
+  --color-dark-blue: #282c4b;
+
+  /* color background */
+  --color-header-bg: linear-gradient(#f6d7e4 20%, #f6d7e4 0%);
+  --color-testimonial-bg: linear-gradient(#ff012f 30%, #ff013e 0%);
+  --color-input-bg: #fff8f8;
+
+  /* color-text */
+  --color-text-black: #282c4b;
+  --color-text-black-2nd: #14183e;
+  --color-text-gray: #747582;
+
+  /* font */
+  --font-primary: "Ubuntu", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ========== Default Codes ========= */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-primary);
+}
+
+.img-responsive,
+.video {
+  max-width: 100%;
+  height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  padding: 0;
+  margin: 0;
+  font-style: normal;
+}
+
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* ============ Typhography =========== */
+h1 {
+  font-weight: 700;
+  font-size: 5.8rem;
+  line-height: 8rem;
+  letter-spacing: 2%;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 3.6rem;
+  line-height: 6rem;
+  letter-spacing: 1%;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 2.4rem;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.6rem;
+}
+
+h5 {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+}
+
+.nav-text {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+}
+
+.btn-text {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2rem;
+}
+
+.label {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 3.2rem;
+}
+
+.input-text {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+}
+
+.para-large {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3.6rem;
+}
+
+.para-mid {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3.2rem;
+}
+
+.para-small {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+}
+
+/* =========== Btns ============= */
+.btn-container,
+.btn-primary,
+.btn-secondary,
+.btn-tertiary {
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-primary {
+  background: var(--color-pink);
+  border: 0.1rem solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0px 30px 50px rgba(168, 22, 75, 0.15);
+  border-radius: 20rem;
+  padding: 2.4rem 5.2rem;
+  color: var(--color-white);
+}
+
+.btn-secondary {
+  background: var(--color-white);
+  border: 1px solid rgba(255, 105, 141, 0.5);
+  border-radius: 8rem;
+  padding: 2rem 4rem;
+  color: var(--color-text-black);
+}
+
+.btn-tertiary {
+  background: rgba(255, 100, 137, 0.04);
+  color: var(--color-text-black);
+  padding: 2.4rem 3.6rem;
+}
+
+/* =========== Page Styling Starts ============== */
+
+/* ===== Header ===== */
+.header {
+  background: var(--color-header-bg);
+  height: 100vh;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  padding: 5rem 0 2rem 0;
+}
+
+/* ===== Navbar Toggler ===== */
+.navbar-toggler-box {
+  display: none;
+  overflow: hidden;
+}
+
+.navbar-toggler {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  width: 6rem;
+  height: 4rem;
+}
+
+.navbar-toggle {
+  width: 100%;
+  height: 20%;
+  background: var(--color-dark-blue);
+  border-radius: 2rem;
+}
+
+/* ===== Toggle Activity ===== */
+
+.toggle > .navbar-toggle-top {
+  transform: rotate(45deg) translate(1rem, 1rem);
+  transition: all 0.5s ease;
+}
+.toggle > .navbar-toggle-mid {
+  transition: all 0.2s ease;
+  opacity: 0;
+}
+.toggle > .navbar-toggle-bottom {
+  transform: rotate(-45deg) translate(0.7rem, -1rem);
+  transition: all 0.5s ease;
+}
+
+/* ===== Navbar Menu ===== */
+.nav-links-box {
+  position: relative;
+}
+.nav-links-box,
+.navbar-menu {
+  display: flex;
+  gap: 6rem;
+  align-items: center;
+}
+.nav-links {
+  color: var(--color-text-gray);
+  transition: all 0.5s ease;
+}
+.nav-links:hover {
+  color: var(--color-black);
+}
+
+/* =========== Page Styling Ends ============== */
+
+/* ========== Media Queries Starts ============ */
+
+/* Media Queries for Tablet */
+@media screen and (max-width: 768px) {
+  /* .nav-links-box */
+  .nav-links-box {
+    position: fixed;
+    left: 0%;
+    top: 10%;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    padding: 4rem 0;
+    background: var(--color-dark-blue);
+    transform: translateX(-120%);
+    transition: all 0.5s ease;
+  }
+  .open {
+    transform: translateX(0%);
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .nav-text {
+    color: var(--color-white);
+  }
+
+  /* .navbar-toggler */
+  .navbar-toggler-box {
+    display: block;
+  }
+}
+
+/* Media Queries for Mobile */
+@media screen and (max-width: 480px) {
+  /* btns */
+  .navbar .btn-container {
+    width: 100%;
+    padding: 0 2rem;
+  }
+  .btn-container,
+  .btn-primary,
+  .btn-secondary,
+  .btn-tertiary {
+    display: block;
+  }
+
+  /* .nav-links-box */
+  .nav-links-box {
+    top: 14%;
+  }
+}
+
+/* ========== Media Queries Ends ============ */
