@@ -18,6 +18,7 @@
   --color-text-black: #282c4b;
   --color-text-black-2nd: #14183e;
   --color-text-gray: #747582;
+  --color-light-gray: #ced1e5;
 
   /* font */
   --font-primary: "Ubuntu", sans-serif;
@@ -114,6 +115,13 @@ h6,
   font-weight: 500;
   font-size: 2rem;
   line-height: 3.2rem;
+}
+
+.feature-text {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.2rem;
+  color: var(--color-light-gray);
 }
 
 .input-text {
@@ -440,6 +448,51 @@ h6,
   color: var(--color-text-gray);
 }
 
+/* =========== Choose Sec Styling ============ */
+.choose {
+  padding-block: 3.2rem;
+  background: var(--color-dark-blue);
+  position: relative;
+  z-index: 1;
+}
+.choose_img-box {
+  position: relative;
+}
+.choose_arrow-up {
+  position: absolute;
+  top: 8rem;
+  right: 8.6rem;
+}
+.choose_arrow-bottom {
+  position: absolute;
+  bottom: 5.8rem;
+  right: 12.2rem;
+}
+
+.choose-contents {
+  padding: 0 10rem;
+}
+.choose-contents h6 {
+  color: var(--color-orange);
+  margin-bottom: 1.2rem;
+}
+.choose-contents h2 {
+  color: var(--color-white);
+  margin-bottom: 2.6rem;
+  max-width: 24ch;
+}
+.choose-features {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 6.2rem;
+}
+.choose-features .feature {
+  display: flex;
+  gap: 1.8rem;
+  align-items: center;
+}
+
 /* =========== Page Styling Ends ============== */
 
 /* ========== Media Queries Starts ============ */
@@ -495,6 +548,11 @@ h6,
   }
   .service_arrow {
     display: none;
+  }
+
+  /* .choose */
+  .choose-contents {
+    padding: 0 2rem;
   }
 }
 
@@ -574,6 +632,15 @@ h6,
   }
   .service_card {
     padding: 4rem;
+  }
+
+  /* .choose */
+  .choose_arrow-up,
+  .choose_arrow-bottom {
+    display: none;
+  }
+  .choose .choose_img-box {
+    margin-bottom: 2rem;
   }
 }
 
