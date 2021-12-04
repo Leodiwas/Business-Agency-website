@@ -132,6 +132,7 @@ h6,
   font-weight: 400;
   font-size: 2rem;
   line-height: 3.2rem;
+  color: var(--color-text-gray);
 }
 
 .para-small {
@@ -325,6 +326,120 @@ h6,
   padding-block: 5.2rem;
 }
 
+/* Brands Hover */
+/* Slack */
+.Slack:hover {
+  transform: scale(1.2);
+  transition: all 0.5s ease;
+}
+.Slack:hover .skyBlue {
+  fill: #36c5f0;
+  transition: all 0.5s ease;
+}
+.Slack:hover .green {
+  fill: #2eb67d;
+  transition: all 0.5s ease;
+}
+.Slack:hover .yellow {
+  fill: #ecb22e;
+  transition: all 0.5s ease;
+}
+.Slack:hover .red {
+  fill: #e01e5a;
+  transition: all 0.5s ease;
+}
+.Slack:hover .slack-text,
+.Slack:hover .slack-text-a {
+  fill: #000;
+  transition: all 0.5s ease;
+}
+
+/* Prudental */
+.Prudental:hover {
+  transform: scale(1.2);
+  transition: all 0.5s ease;
+}
+.Prudental:hover .Prudental-text {
+  fill: #0078c4;
+  transition: all 0.5s ease;
+}
+
+/* Microsoft */
+.microsoft:hover {
+  transform: scale(1.2);
+  transition: all 0.5s ease;
+}
+.microsoft:hover .microsoft-text {
+  fill: #282c4b;
+  transition: all 0.5s ease;
+}
+.microsoft:hover .microsoft-red {
+  fill: #f1511b;
+  transition: all 0.5s ease;
+}
+.microsoft:hover .microsoft-green {
+  fill: #80cc28;
+  transition: all 0.5s ease;
+}
+.microsoft:hover .microsoft-skyBlue {
+  fill: #00adef;
+  transition: all 0.5s ease;
+}
+.microsoft:hover .microsoft-yellow {
+  fill: #fbbc09;
+  transition: all 0.5s ease;
+}
+
+/* Zoover */
+.zoover:hover {
+  transform: scale(1.2);
+  transition: all 0.5s ease;
+}
+.zoover:hover .zoover-text {
+  fill: #f26924;
+  transition: all 0.5s ease;
+}
+
+/* =========== Services Styling ============= */
+.services {
+  padding: 7rem 0 14rem 0;
+  position: relative;
+}
+.service_info {
+  max-width: 34rem;
+}
+.service_info > h6 {
+  color: var(--color-orange);
+  margin-bottom: 1.2rem;
+}
+.service_info > h2 {
+  margin-bottom: 2.4rem;
+}
+.service_arrow {
+  position: absolute;
+  bottom: 4.6rem;
+  left: 34rem;
+}
+
+.service_card {
+  padding: 5rem 4rem 6rem;
+  transition: all 0.5s ease;
+}
+.service_card:hover {
+  transform: scale(1.06);
+  box-shadow: 40px 0px 70px rgba(121, 121, 121, 0.05),
+    -40px 100px 70px rgba(121, 121, 121, 0.05);
+}
+.service_card .service_card-svg {
+  margin-bottom: 2.2rem;
+}
+.service_card h4 {
+  margin-bottom: 2rem;
+}
+.service_card .para-small {
+  color: var(--color-text-gray);
+}
+
 /* =========== Page Styling Ends ============== */
 
 /* ========== Media Queries Starts ============ */
@@ -370,9 +485,16 @@ h6,
   }
 
   /* .brands */
-  body > main > section > div > div > div:nth-child(1) > div,
-  body > main > section > div > div > div:nth-child(2) > div {
+  body > main > section > div > div > div:nth-child(1) > div {
     margin-bottom: 6rem;
+  }
+
+  /* .services */
+  .services {
+    padding: 7rem 0;
+  }
+  .service_arrow {
+    display: none;
   }
 }
 
@@ -441,6 +563,17 @@ h6,
   body > main > section > div > div > div:nth-child(1) > div,
   body > main > section > div > div > div:nth-child(2) > div {
     margin-bottom: 0;
+  }
+
+  /* .service */
+  .services {
+    padding: 5.2rem;
+  }
+  .service_info {
+    margin: auto;
+  }
+  .service_card {
+    padding: 4rem;
   }
 }
 
