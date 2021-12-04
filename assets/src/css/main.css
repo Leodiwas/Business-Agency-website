@@ -320,6 +320,11 @@ h6,
   right: 0rem;
 }
 
+/* ============ Brands Styling ============ */
+.brands {
+  padding-block: 5.2rem;
+}
+
 /* =========== Page Styling Ends ============== */
 
 /* ========== Media Queries Starts ============ */
@@ -362,6 +367,12 @@ h6,
   .hero_arrow-right,
   .hero-rating-box {
     right: 6rem;
+  }
+
+  /* .brands */
+  body > main > section > div > div > div:nth-child(1) > div,
+  body > main > section > div > div > div:nth-child(2) > div {
+    margin-bottom: 6rem;
   }
 }
 
@@ -420,6 +431,16 @@ h6,
   .hero-btns {
     flex-direction: column;
     gap: 2rem;
+  }
+
+  /* .brands */
+  /* .brands */
+  .brands .row {
+    gap: 6rem;
+  }
+  body > main > section > div > div > div:nth-child(1) > div,
+  body > main > section > div > div > div:nth-child(2) > div {
+    margin-bottom: 0;
   }
 }
 
