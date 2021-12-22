@@ -452,11 +452,12 @@ label {
   padding: 5rem 4rem 6rem;
   transition: all 0.5s ease;
   border-radius: 0.4rem;
+  cursor: pointer;
 }
 .service_card:hover {
   transform: scale(1.06);
   box-shadow: 40px 0px 70px rgba(121, 121, 121, 0.05),
-    -40px 100px 70px rgba(121, 121, 121, 0.05);
+    -40px 100px 70px rgba(121, 121, 121, 0.09);
 }
 .service_card .service_card-svg {
   margin-bottom: 2.2rem;
@@ -957,7 +958,7 @@ input[type="submit"] {
 
   /* .testimonial */
   .testimonial {
-    height: 100vh;
+    height: 106vh;
   }
   .testimonial-title {
     margin-bottom: 2rem;
@@ -966,7 +967,7 @@ input[type="submit"] {
     margin: auto;
   }
   .testimonial-card {
-    top: 22rem;
+    top: 24rem;
     right: 0;
     border-radius: 0;
     max-width: 44rem;
